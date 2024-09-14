@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <!-- Link to external Google font to improve typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic reset for margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply font family from Google Fonts */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #004d99; /* Dark blue header */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Container for layout */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Course Details section styling */
+        .course-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .course-detail img {
+            max-width: 45%; /* Ensure image takes up 45% of the width */
+            border-radius: 10px;
+        }
+
+        .course-detail-text {
+            max-width: 50%; /* The text column will take up 50% */
+        }
+
+        .course-detail-text h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #004d99;
+        }
+
+        .course-detail-text p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for course points */
+        .course-points {
+            list-style-type: none;
+        }
+
+        .course-points li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .course-points li::before {
+            content: "\2713"; /* Adds checkmark before each item */
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Courses grid layout for 9 courses */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .course-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .course-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .course-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .course-item h3 {
+            margin-top: 15px;
+            font-size: 1.4em;
+            color: #004d99;
+        }
+
+        .course-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #004d99;
+            color: white;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Course Details</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Course Detail Section (Image + Text) -->
+        <div class="course-detail">
+            <!-- Course image section -->
+            <img src="https://via.placeholder.com/500x300" alt="Course Image">
+            
+            <!-- Course detail text section -->
+            <div class="course-detail-text">
+                <h2>Course Detail</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis pellentesque metus id lacinia. Nunc dapibus pulvinar auctor.</p>
+                
+                <!-- Course points -->
+                <ul class="course-points">
+                    <li>Course point 1</li>
+                    <li>Course point 2</li>
+                    <li>Course point 3</li>
+                    <li>Course point 4</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Grid Layout for 9 Courses -->
+        <section>
+            <h2 style="text-align: center; margin-bottom: 40px;">Available Courses</h2>
+
+            <div class="courses-grid">
+                <!-- Course item 1 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 1 Image">
+                    <h3>Course Title 1</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 2 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 2 Image">
+                    <h3>Course Title 2</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 3 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 3 Image">
+                    <h3>Course Title 3</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 4 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 4 Image">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 5 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 5 Image">
+                    <h3>Course Title 5</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 6 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 6 Image">
+                    <h3>Course Title 6</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 7 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 7 Image">
+                    <h3>Course Title 7</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 8 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 8 Image">
+                    <h3>Course Title 8</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+
+                <!-- Course item 9 -->
+                <div class="course-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Course 9 Image">
+                    <h3>Course Title 9</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

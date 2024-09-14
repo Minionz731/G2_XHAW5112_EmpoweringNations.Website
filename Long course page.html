@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Courses</title>
+    <!-- Linking to an external CSS for styling (if any) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font styles can be added here if necessary -->
+    <style>
+        /* Basic styling for page layout */
+        body {
+            font-family: 'Aptos', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .course-card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .course-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .course-card button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .course-card button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container for the page content -->
+    <div class="container">
+
+        <!-- Header section for page title -->
+        <div class="header">
+            <h1>Long Courses</h1>
+            <p>Select your course from the options below.</p>
+        </div>
+
+        <!-- Grid layout to display the course cards -->
+        <div class="courses-grid">
+
+            <!-- Course Card 1: First Aid -->
+            <div class="course-card">
+                <img src="first-aid-icon.png" alt="First Aid Course Icon">
+                <h3>First Aid</h3>
+                <p>Learn the basics of first aid and how to handle emergencies.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Course Card 2: Sewing -->
+            <div class="course-card">
+                <img src="sewing-icon.png" alt="Sewing Course Icon">
+                <h3>Sewing</h3>
+                <p>Master the art of sewing with our expert-led courses.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Course Card 3: Landscaping -->
+            <div class="course-card">
+                <img src="landscaping-icon.png" alt="Landscaping Course Icon">
+                <h3>Landscaping</h3>
+                <p>Learn landscaping techniques and improve outdoor spaces.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Course Card 4: Life Skills -->
+            <div class="course-card">
+                <img src="life-skills-icon.png" alt="Life Skills Course Icon">
+                <h3>Life Skills</h3>
+                <p>Develop critical life skills to improve personal and professional life.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Course Card 5: Cooking -->
+            <div class="course-card">
+                <img src="cooking-icon.png" alt="Cooking Course Icon">
+                <h3>Cooking</h3>
+                <p>Become a culinary expert with our cooking course.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Course Card 6: Carpentry -->
+            <div class="course-card">
+                <img src="carpentry-icon.png" alt="Carpentry Course Icon">
+                <h3>Carpentry</h3>
+                <p>Learn the basics of woodworking and carpentry skills.</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

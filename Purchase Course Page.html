@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Course</title>
+    <!-- Linking to an external CSS file (if any) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Inline CSS for layout and design -->
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: 'Aptos', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Container for page content */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        /* Header section */
+        .header {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #333;
+        }
+
+        .header p {
+            color: #777;
+        }
+
+        /* Form grid for course selection */
+        .course-selection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 120px;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Styling for the total section */
+        .total-section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .total-section p {
+            font-size: 1.25rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .total-section .total-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Styling for the purchase button */
+        .purchase-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .purchase-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Header for the Purchase Course section -->
+        <div class="header">
+            <h1>Purchase Course</h1>
+            <p>Select the courses you would like to purchase from the options below.</p>
+        </div>
+
+        <!-- Course selection form grid with 9 textboxes for selecting courses -->
+        <div class="course-selection">
+            <!-- Form group for each textbox -->
+            <div class="form-group">
+                <label for="course1">Feature 1</label>
+                <input type="text" id="course1" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course2">Feature 2</label>
+                <input type="text" id="course2" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course3">Feature 3</label>
+                <input type="text" id="course3" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course4">Feature 4</label>
+                <input type="text" id="course4" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course5">Feature 5</label>
+                <input type="text" id="course5" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course6">Feature 6</label>
+                <input type="text" id="course6" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course7">Feature 7</label>
+                <input type="text" id="course7" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course8">Feature 8</label>
+                <input type="text" id="course8" placeholder="Select Course">
+            </div>
+
+            <div class="form-group">
+                <label for="course9">Feature 9</label>
+                <input type="text" id="course9" placeholder="Select Course">
+            </div>
+        </div>
+
+        <!-- Total Section displaying total amount, courses selected, and discount -->
+        <div class="total-section">
+            <p>Total: <span class="total-price">R1500.00</span></p>
+            <p>Courses Selected: 8</p>
+            <p>Discount: R300.00</p>
+            <!-- Purchase button -->
+            <button class="purchase-btn">Purchase</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
