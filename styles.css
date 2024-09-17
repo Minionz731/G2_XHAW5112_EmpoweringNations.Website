@@ -1,0 +1,12 @@
+/* Your existing styles here */
+
+.logo-and-name {
+    position: relative;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.logo-and-name img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    float: right;
+}
