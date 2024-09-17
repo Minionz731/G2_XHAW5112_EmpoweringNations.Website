@@ -1,12 +1,13 @@
 /* Your existing styles here */
 
-.logo-and-name {
-    position: relative;
+.logo-and-name 
+     {
+        height: 50px; /* Set height of the logo */
     margin-top: 20px; /* Adjust as needed */
 }
 
 .logo-and-name img {
     width: 200px; /* Adjust as needed */
-    height: auto;
-    float: right;
+    height: 120px;
+    float:right;
 }
